@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  @extend %font-prim;
+  font-style: normal;
+  color: $color-light-xl;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  background-color: $color-dark-l;
+
+  main {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0 7rem;
+
+  @include media-medium {
+    padding: 0 4rem;
+  }
+
+  @include media-small {
+    padding: 0 3rem;
+  }
+
+  @include media-mobile {
+    padding: 0 1.4rem;
+  }
+}
+
+.title {
+  @include section-title;
+  padding-top: 3rem;
+}
+
+.message {
+  margin: 0;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-align: center;
+
+  @include media-mobile {
+    font-size: 1.8rem;
+    letter-spacing: -0.72px;
+  }
+}
