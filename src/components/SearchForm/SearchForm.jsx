@@ -12,7 +12,11 @@ export function SearchForm({ handleSearch }) {
 
   return (
     <section className='search' aria-label='Поиск фильмов'>
-      <form className='search__form' onSubmit={onSearch}>
+      <form
+        className='search__form'
+        onSubmit={onSearch}
+        data-testid='search-form'
+      >
         <input
           className='search__input'
           type='text'
