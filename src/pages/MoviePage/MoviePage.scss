@@ -1,0 +1,54 @@
+@import '../../styles/abstract/constants.scss';
+@import '../../styles/abstract/placeholders.scss';
+@import '../../styles/abstract/mixins.scss';
+
+.film__wrapper {
+  padding-top: 2rem;
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+
+.film__image {
+  width: 35%;
+  aspect-ratio: 1 / 1.44;
+  object-fit: cover;
+}
+
+.film__info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.film__column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.film__title {
+  @include film-title;
+  padding-bottom: 3rem;
+}
+
+.film__rating,
+.film__description {
+  @include text;
+}
+
+.film__genre {
+  display: flex;
+  gap: 0.5rem;
+
+  p {
+    @include text;
+  }
+}
+
+.film__link {
+  @include link;
+  @include menu-link;
+}

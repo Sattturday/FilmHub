@@ -52,17 +52,19 @@ export const Home = () => {
   return (
     <main>
       <div className='wrapper'>
-        <h1 className='title'>FilmHub</h1>
-        <SearchForm handleSearch={handleSearch} />
-        {isLoading ? (
-          <p className='message'>{messages.loadMessage}</p>
-        ) : hasError ? (
-          <p className='message'>{messages.errorMessage}</p>
-        ) : noResults ? (
-          <p className='message'>{messages.searchMessage}</p>
-        ) : (
-          <ShowList movies={displayMovies} />
-        )}
+        <section className='search-films'>
+          <h1 className='title'>FilmHub</h1>
+          <SearchForm handleSearch={handleSearch} />
+          {isLoading ? (
+            <p className='message'>{messages.loadMessage}</p>
+          ) : hasError ? (
+            <p className='message'>{messages.errorMessage}</p>
+          ) : noResults ? (
+            <p className='message'>{messages.searchMessage}</p>
+          ) : (
+            <ShowList movies={displayMovies} />
+          )}
+        </section>
       </div>
     </main>
   );

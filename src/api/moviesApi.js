@@ -9,7 +9,13 @@ export const moviesApi = createApi({
   endpoints: (builder) => ({
     getMovies: builder.query({
       query: () => ({
-        url: '/v2.2/films',
+        url: '/v2.2/films/collections?type=TOP_POPULAR_ALL',
+        headers: new Headers({ 'X-API-KEY': apiKey }),
+      }),
+    }),
+    getMoviesById: builder.query({
+      query: (id) => ({
+        url: `/v2.2/films/${id}`,
         headers: new Headers({ 'X-API-KEY': apiKey }),
       }),
     }),
@@ -22,4 +28,8 @@ export const moviesApi = createApi({
   }),
 });
 
-export const { useGetMoviesQuery, useSearchMoviesQuery } = moviesApi;
+export const {
+  useGetMoviesQuery,
+  useGetMoviesByIdQuery,
+  useSearchMoviesQuery,
+} = moviesApi;
