@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Card.scss';
 
 export function Card({ card }) {
-  const link = `/films/${card.kinopoiskId}`;
+  const link = `/films/${card.kinopoiskId || card.filmId}`;
 
   return (
     <li className='card'>

@@ -7,6 +7,12 @@
   width: 100%;
   display: flex;
   gap: 5%;
+
+  @include media-medium {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 .film__image {
@@ -21,6 +27,12 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+
+  @include media-medium {
+    padding-bottom: 3rem;
+    width: 100%;
+    gap: 4rem;
+  }
 }
 
 .film__column {
@@ -32,6 +44,10 @@
 .film__title {
   @include film-title;
   padding-bottom: 3rem;
+
+  @include media-medium {
+    padding: 0;
+  }
 }
 
 .film__rating,
