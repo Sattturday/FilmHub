@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FilmHub/static/css/main.87b54ed3.css",
+    "main.js": "/FilmHub/static/js/main.82e0a1a0.js",
+    "static/media/inter_medium.ttf": "/FilmHub/static/media/inter_medium.458d4e2d8d4b09bf743d.ttf",
+    "static/media/inter_regular.ttf": "/FilmHub/static/media/inter_regular.78b51f2147202615aa77.ttf",
+    "static/media/inter_medium.woff2": "/FilmHub/static/media/inter_medium.8deb33947e08cf051d29.woff2",
+    "static/media/inter_regular.woff2": "/FilmHub/static/media/inter_regular.0b012ad5dc61a70129a7.woff2",
+    "index.html": "/FilmHub/index.html",
+    "static/media/find.svg": "/FilmHub/static/media/find.70f4a3ad37b599f091d4.svg",
+    "static/media/inter_medium.eot": "/FilmHub/static/media/inter_medium.31d6cfe0d16ae931b73c.eot",
+    "static/media/inter_medium.woff": "/FilmHub/static/media/inter_medium.31d6cfe0d16ae931b73c.woff",
+    "static/media/inter_regular.eot": "/FilmHub/static/media/inter_regular.31d6cfe0d16ae931b73c.eot",
+    "static/media/inter_regular.woff": "/FilmHub/static/media/inter_regular.31d6cfe0d16ae931b73c.woff",
+    "main.87b54ed3.css.map": "/FilmHub/static/css/main.87b54ed3.css.map",
+    "main.82e0a1a0.js.map": "/FilmHub/static/js/main.82e0a1a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87b54ed3.css",
+    "static/js/main.82e0a1a0.js"
+  ]
+}
